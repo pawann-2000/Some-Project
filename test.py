@@ -9,7 +9,7 @@ user1 = {
 def authenticated(fn):
     for val in user1.values():
         if(val == True):
-            @authenticated
+            return True
         else:
             return False
 
